@@ -1,0 +1,15 @@
+.myBtn {
+  padding: 5px 15px;
+  color: teal;
+  font-size: 14px;
+  background: transparent;
+  border: 1px solid teal;
+  cursor: pointer;
+}
+.myBtn:disabled {
+  opacity: 50%;
+  cursor: not-allowed;
+}
+.myBtn:hover {
+  color: aquamarine;
+}
