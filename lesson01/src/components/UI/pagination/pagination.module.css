@@ -1,0 +1,26 @@
+.pagination{
+    margin: 2vh auto;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination > .btn{
+    cursor: pointer;
+    margin: 1vh;
+    width: 2vw;
+    height: 4vh;
+    border: 1px solid teal;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination > .btn.current{
+    background-color: teal;
+    color: black;
+}
+  
+.pagination > .btn:hover{
+    color: aquamarine;
+}

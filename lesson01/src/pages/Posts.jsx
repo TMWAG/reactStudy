@@ -12,7 +12,7 @@ import { usePosts } from "./hooks/usePost";
 import "./styles/App.css";
 import { getPageCount } from "./utils/pages";
 
-function App() {
+function Posts() {
   const [posts, setPosts] = useState([]);
   const [filter, setFilter] = useState({sort: '', query: ''});
   const [modal, setModal] = useState(false);
@@ -84,4 +84,4 @@ function App() {
   );
 }
 
-export default App;
+export default Posts;

@@ -1,8 +1,9 @@
 import React from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import PostItem from "./PostItem";
+import Pagination from "./UI/pagination/Pagination";
 
-const PostList = ({ posts, title, remove }) => {
+const PostList = ({ posts, title, remove, pagesArray, page, changePage }) => {
   if(!posts.length){
     return(
       <h2>
@@ -24,7 +25,11 @@ const PostList = ({ posts, title, remove }) => {
           </CSSTransition>
         ))}
       </TransitionGroup>
-      
+      <Pagination
+        pagesArray={pagesArray}
+        page={page}
+        changePage={changePage}
+      />
     </div>
   );
 };
