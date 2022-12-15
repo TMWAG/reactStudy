@@ -6,7 +6,8 @@
 
 #root {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App {
@@ -24,6 +25,11 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.post__btns{
+  display: flex;
+}
+
 .post-enter{
   transform: translateX(-100vw);
 }
@@ -46,4 +52,25 @@ div > h2 {
 .no_posts_notification{
   text-align: center;
   font-size: larger;
+}
+
+.not_found{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: lightcoral;
+}
+
+.comment_section{
+  margin-top: 2vh;
+  background-color: lightblue;
+  border-radius: 10px;
+  border: 1px solid teal 
+}
+
+.comment:nth-child(2n){
+  background-color: aliceblue;
+  border-top: 1px solid teal;
+  border-bottom: 1px solid teal;
 }
